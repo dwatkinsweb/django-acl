@@ -1,0 +1,86 @@
+[
+    {
+        "pk": 1,
+        "model": "auth.Group",
+        "fields": {
+            "name": "group1"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "auth.Group",
+        "fields": {
+            "name": "group2"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "auth.User",
+        "fields": {
+            "username": "user1",
+            "password": "sha1$e2fd5$96edae9adc8870fd87a65c051e7fdace6226b5a8",
+            "groups":[["group1"]]
+        }
+    },
+    {
+        "pk": 2,
+        "model": "auth.User",
+        "fields": {
+            "username": "user2",
+            "password": "sha1$e2fd5$96edae9adc8870fd87a65c051e7fdace6226b5a8",
+            "groups":[["group1"]]
+        }
+    },
+    {
+        "pk": 3,
+        "model": "auth.User",
+        "fields": {
+            "username": "user3",
+            "password": "sha1$e2fd5$96edae9adc8870fd87a65c051e7fdace6226b5a8",
+            "groups": [["group2"]]
+        }
+    },
+    {
+        "pk": 4,
+        "model": "auth.User",
+        "fields": {
+            "username": "user4",
+            "password": "sha1$e2fd5$96edae9adc8870fd87a65c051e7fdace6226b5a8",
+            "groups": [["group2"]]
+        }
+    },
+    {
+        "pk": 5,
+        "model": "auth.User",
+        "fields": {
+            "username": "user5",
+            "password": "sha1$e2fd5$96edae9adc8870fd87a65c051e7fdace6226b5a8"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "auth.User",
+        "fields": {
+            "username": "user6",
+            "password": "sha1$e2fd5$96edae9adc8870fd87a65c051e7fdace6226b5a8"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "djangoacl.Action",
+        "fields": {
+            "name": "testaction1",
+            "users": [5],
+            "groups": [["group1"]]
+        }
+    },
+    {
+        "pk": 2,
+        "model": "djangoacl.Action",
+        "fields": {
+            "name": "testaction2",
+            "users": [6],
+            "groups": [["group2"]]
+        }
+    }
+]
