@@ -22,10 +22,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    'django_nose',
+    # 'django_nose',
     'djangoacl',
     'backend',
-    'south'
+    # 'south'
 ]
 
 MEDIA_URL = '/media/'  # Avoids https://code.djangoproject.com/ticket/21451
