@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-acl',
-    version='0.1.2',
+    version='0.1.3',
     packages=find_packages(),
     url='https://github.com/dwatkinsweb/django-acl',
     license='MIT',
@@ -14,7 +14,7 @@ setup(
     description='ACL (Action Control List) permission handling.',
     platforms='any',
     install_requires=[
-        'Django==1.6'
+        'Django>=1.6,<1.9'
     ],
     classifiers=[
         'Environment :: Web Environment',
